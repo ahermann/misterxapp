@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>MisterX App - API</title>
+  </head>
+
+  <body>
+    <h1>MisterX App - API</h1>
+    
+    <p>
+    <i>Hint: Use the Firefox Plugin "Poster" for testing the API</i>
+    </p>
+	
+    <table style="width: 400px">
+      <tr>
+        <td colspan="2" style="font-weight:bold;">Game Actions</td>
+      </tr>
+      <tr>
+        <td><a href="/api/game">getAllGames</a></td>
+      	<td>GET</td>
+      </tr>
+      <tr>
+        <td><a href="/api/game/1">getGame(gameId)</a></td>
+      	<td>GET</td>
+      </tr>
+      <tr>
+        <td><a href="/api/game">createGame(gameName)</a></td>
+      	<td>POST</td>
+      </tr>
+      <tr>
+        <td><a href="/api/game/1/2">joinGame(gameId, playerId)</a></td>
+      	<td>PUT</td>
+      </tr>
+      <tr>
+        <td><a href="/api/game/1/2">leaveGame(gameId, playerId)</a></td>
+      	<td>DELETE</td>
+      </tr>
+    </table>
+    
+    <br/>
+    
+    <table style="width: 400px">
+      <tr>
+        <td colspan="2" style="font-weight:bold;">Player Actions</td>
+      </tr>
+      <tr>
+        <td><a href="/api/player">getAllPlayers</a></td>
+      	<td>GET</td>
+      </tr>
+      <tr>
+        <td><a href="/api/player/1">getPlayer(gameId)</a></td>
+      	<td>GET</td>
+      </tr>
+      <tr>
+        <td><a href="/api/player">createPlayer</a></td>
+      	<td>POST</td>
+      </tr>
+    </table>
+    
+  </body>
+</html>
